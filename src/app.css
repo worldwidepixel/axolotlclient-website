@@ -1,0 +1,114 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-brand-rose: #e14c7a;
+	--color-brand-aqua: #4ce1b3;
+	--color-brand-sky: #9ee2ef;
+	--color-brand-violet: #684ce1;
+
+	--color-neutral-50: #f7f7f8;
+	--color-neutral-100: #eeeef0;
+	--color-neutral-200: #d9d9de;
+	--color-neutral-300: #b7b7c2;
+	--color-neutral-400: #9090a0;
+	--color-neutral-500: #727285;
+	--color-neutral-600: #5a5a6b;
+	--color-neutral-700: #4b4b59;
+	--color-neutral-800: #40404c;
+	--color-neutral-900: #393941;
+	--color-neutral-950: #26262b;
+
+	--spacing-page: 70rem;
+
+	--font-stack:
+		ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+		'Noto Color Emoji';
+	--font-sans: 'Inter', var(--font-stack);
+	--font-fira: 'Fira Sans', var(--font-sans);
+}
+
+@layer utilities {
+	html,
+	body {
+		@apply h-full w-full;
+	}
+
+	:root {
+		@apply font-sans;
+	}
+
+	* {
+		@apply border-neutral-800;
+		scrollbar-color: var(--color-neutral-950) var(--color-neutral-50);
+	}
+
+	.page-constraint-container {
+		@apply flex w-full flex-col items-center;
+
+		.page-constraint {
+			@apply max-w-page w-full p-4;
+		}
+	}
+
+	h1 {
+		@apply font-fira text-4xl font-black;
+	}
+	h2 {
+		@apply font-fira text-2xl font-extrabold;
+	}
+	h3 {
+		@apply text-xl font-bold;
+	}
+	h4 {
+		@apply text-lg;
+	}
+	a {
+		@apply underline;
+	}
+	.button {
+		@apply cursor-pointer rounded-xl bg-neutral-100 p-3 font-bold text-black transition select-none hover:brightness-95 active:scale-95;
+	}
+	.button.hero {
+		@apply bg-brand-violet text-white;
+	}
+	.button.inverted {
+		@apply bg-white text-black;
+	}
+	.button.text {
+		@apply !px-4 !py-2;
+	}
+	.card {
+		@apply flex flex-col items-center gap-4 rounded-xl bg-neutral-50 px-6 py-8;
+	}
+
+	.md h1 {
+		@apply mb-4 border-b text-3xl font-bold;
+	}
+	.md h2 {
+		@apply my-2 border-b text-2xl font-bold;
+	}
+	.md h3 {
+		@apply mb-4 text-xl font-bold;
+	}
+	.md img {
+		@apply m-0.5 inline-block w-fit max-w-full;
+	}
+	.md p {
+		@apply my-4;
+	}
+	.md strong {
+		@apply font-bold;
+	}
+	.md li {
+		@apply mb-4 ml-8 list-disc;
+	}
+
+	.tooltip-axolotl {
+		@apply flex flex-col items-center !rounded-lg !bg-neutral-950 text-sm font-extrabold shadow-2xl;
+		.tip:before {
+			@apply mx-[34.5%] mt-[-12px] hidden;
+		}
+	}
+}
+
+@tailwind utilities;
