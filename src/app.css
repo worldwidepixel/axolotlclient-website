@@ -57,13 +57,10 @@
 		@apply font-fira text-2xl font-extrabold;
 	}
 	h3 {
-		@apply text-xl font-bold;
+		@apply font-fira text-xl font-bold;
 	}
 	h4 {
-		@apply text-lg;
-	}
-	a {
-		@apply underline;
+		@apply text-lg font-bold;
 	}
 	.button {
 		@apply cursor-pointer rounded-xl bg-neutral-100 p-3 font-bold text-black transition select-none hover:brightness-95 active:scale-95;
@@ -81,26 +78,31 @@
 		@apply flex flex-col items-center gap-4 rounded-xl bg-neutral-50 px-6 py-8;
 	}
 
-	.md h1 {
-		@apply mb-4 border-b text-3xl font-bold;
-	}
-	.md h2 {
-		@apply my-2 border-b text-2xl font-bold;
-	}
-	.md h3 {
-		@apply mb-4 text-xl font-bold;
-	}
-	.md img {
-		@apply m-0.5 inline-block w-fit max-w-full;
-	}
-	.md p {
-		@apply my-4;
-	}
-	.md strong {
-		@apply font-bold;
-	}
-	.md li {
-		@apply mb-4 ml-8 list-disc;
+	.md {
+		h1 {
+			@apply mb-4 border-b text-3xl font-bold;
+		}
+		h2 {
+			@apply my-2 border-b text-2xl font-bold;
+		}
+		h3 {
+			@apply mb-4 text-xl font-bold;
+		}
+		img {
+			@apply m-0.5 inline-block w-fit max-w-full;
+		}
+		p {
+			@apply my-4;
+		}
+		strong {
+			@apply font-bold;
+		}
+		li {
+			@apply mb-4 ml-8 list-disc;
+		}
+		a {
+			@apply text-blue-500 underline;
+		}
 	}
 
 	.tooltip-axolotl {

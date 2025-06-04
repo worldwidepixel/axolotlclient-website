@@ -1,6 +1,5 @@
 <script>
-	import { SiGithub, SiModrinth } from '@icons-pack/svelte-simple-icons';
-	import { HammerIcon } from 'lucide-svelte';
+	import { GitPullRequestIcon, HammerIcon, PaintbrushIcon } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -30,15 +29,15 @@
 		<h1>Why AxolotlClient?</h1>
 		<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
 			<div class="card">
-				<SiGithub size={64} />
-				<h3>Open-Source</h3>
+				<GitPullRequestIcon size={64} />
+				<h3>Open-source</h3>
 				<span class="text-center">
 					The client is completely open-source for maximum user comfort. All code is licensed under
 					Free software licenses to allow user modifications.
 				</span>
 			</div>
 			<div class="card">
-				<SiModrinth size={64} />
+				<PaintbrushIcon class="size-16" />
 				<h3>Customizable</h3>
 				<span class="text-center">
 					You can add your own mods to create <span class="font-bold"> your own </span>

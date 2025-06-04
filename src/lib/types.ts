@@ -1,3 +1,5 @@
+// Types from SnapperWeb
+
 export type PictureData = {
 	uploader: string;
 	filename: string;

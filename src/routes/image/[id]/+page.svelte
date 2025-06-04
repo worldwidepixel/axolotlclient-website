@@ -111,7 +111,7 @@
 			href={`https://api.axolotlclient.com/v1/image/${data.id}/raw`}
 		>
 			<img
-				class="pixelated rounded-xl border"
+				class="rounded-xl border"
 				draggable="false"
 				alt={`Image created by ${data.image.uploader}`}
 				src={`https://api.axolotlclient.com/v1/image/${data.id}/raw`}
