@@ -79,7 +79,7 @@
 	<meta property="twitter:card" content="summary_large_image" />
 </svelte:head>
 
-<div class="page-constraint-container bg-neutral-50">
+<div class="page-constraint-container bg-neutral-50 dark:bg-neutral-950">
 	<div class="page-constraint flex w-full flex-col items-center gap-4">
 		<div class="flex flex-col items-center gap-2">
 			<h2 class="text-xl font-bold">{data.image.filename}</h2>
@@ -119,12 +119,12 @@
 		</a>
 		<div class="grid grid-cols-3 items-center gap-2">
 			<Tooltip class="tooltip-axolotl" tip="Copy image">
-				<button class="button mono" onclick={copyImage}>
+				<button aria-label="Copy screenshot" class="button mono" onclick={copyImage}>
 					<CopyIcon />
 				</button>
 			</Tooltip>
 			<Tooltip class="tooltip-axolotl" tip="Copy URL">
-				<button class="button mono">
+				<button aria-label="Copy link" class="button mono">
 					<LinkIcon
 						onclick={() => {
 							if (browser) {
@@ -140,11 +140,11 @@
 					tip={`${canShare() ? 'Share image' : 'Browser does not support sharing'}`}
 				>
 					{#if canShare()}
-						<button class="button mono">
+						<button aria-label="Share screenshot" class="button mono">
 							<ShareIcon onclick={shareImage} />
 						</button>
 					{:else}
-						<button class="button mono">
+						<button aria-label="Browser does not support sharing" class="button mono">
 							<ShareIcon class="text-brand-disabled" onclick={shareImage} />
 						</button>
 					{/if}
