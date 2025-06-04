@@ -6,7 +6,9 @@
 	<title>AxolotlClient</title>
 </svelte:head>
 
-<div class="bg-brand-rose page-constraint-container max-h-full py-20">
+<div
+	class="from-brand-rose-500 to-brand-rose-400 dark:from-brand-rose-800 dark:to-brand-rose-700 page-constraint-container max-h-full bg-gradient-to-tr py-20"
+>
 	<div class="page-constraint flex flex-col gap-4">
 		<h1 class="text-5xl text-white">AxolotlClient</h1>
 		<span class="text-lg text-white">

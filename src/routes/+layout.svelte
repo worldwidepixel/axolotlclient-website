@@ -17,7 +17,11 @@
 <div class="flex h-full w-full flex-col items-center">
 	<header class="flex w-full flex-col items-center">
 		<div class="max-w-page flex w-full flex-row justify-between gap-4 p-4">
-			<a aria-label="AxolotlClient Home" href="/" class="flex flex-row items-center gap-6 select-none">
+			<a
+				aria-label="AxolotlClient Home"
+				href="/"
+				class="flex flex-row items-center gap-6 select-none"
+			>
 				<img class="size-10" alt="AxolotlClient logo" src="/images/icon.png" />
 				<span class="font-fira text-2xl font-bold">AxolotlClient</span>
 			</a>
@@ -37,7 +41,7 @@
 	<main class="flex w-full flex-auto flex-col items-center">
 		{@render children()}
 	</main>
-	<footer class="flex w-full flex-col items-center bg-neutral-50">
+	<footer class="flex w-full flex-col items-center bg-neutral-50 dark:bg-neutral-900">
 		<div class="max-w-page flex w-full flex-col gap-4 px-4 py-8">
 			<h2>AxolotlClient</h2>
 
@@ -54,7 +58,7 @@
 				&bull;
 				<a class="text-md font-bold underline" href="/terms">Terms</a>
 			</span>
-			<span class="text-sm text-neutral-500"
+			<span class="text-sm text-neutral-500 dark:text-neutral-300"
 				>NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.</span
 			>
 		</div>

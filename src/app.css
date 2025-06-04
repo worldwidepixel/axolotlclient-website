@@ -18,6 +18,18 @@
 	--color-neutral-900: #393941;
 	--color-neutral-950: #26262b;
 
+	--color-brand-rose-50: oklch(95.003% 0.02102 355.22);
+	--color-brand-rose-100: oklch(91.161% 0.03775 357.04);
+	--color-brand-rose-200: oklch(83.53% 0.07561 358.75);
+	--color-brand-rose-300: oklch(76.133% 0.11424 0.30601);
+	--color-brand-rose-400: oklch(69.284% 0.15278 2.4193);
+	--color-brand-rose-500: oklch(63.317% 0.1872 5.3685);
+	--color-brand-rose-600: oklch(56.532% 0.20715 10.259);
+	--color-brand-rose-700: oklch(46.824% 0.16927 9.5751);
+	--color-brand-rose-800: oklch(36.577% 0.12872 9.1094);
+	--color-brand-rose-900: oklch(25.648% 0.08413 7.1169);
+	--color-brand-rose-950: oklch(19.787% 0.05932 4.7911);
+
 	--spacing-page: 70rem;
 
 	--font-stack:
@@ -34,7 +46,7 @@
 	}
 
 	:root {
-		@apply font-sans;
+		@apply font-sans dark:bg-neutral-950 dark:text-neutral-50;
 	}
 
 	* {
@@ -75,7 +87,7 @@
 		@apply !px-4 !py-2;
 	}
 	.card {
-		@apply flex flex-col items-center gap-4 rounded-xl bg-neutral-50 px-6 py-8;
+		@apply flex flex-col items-center gap-4 rounded-xl bg-neutral-50 px-6 py-8 dark:bg-neutral-900;
 	}
 
 	.md {
@@ -101,7 +113,7 @@
 			@apply mb-4 ml-8 list-disc;
 		}
 		a {
-			@apply text-blue-500 underline;
+			@apply text-blue-500 underline dark:text-blue-400;
 		}
 	}
 
